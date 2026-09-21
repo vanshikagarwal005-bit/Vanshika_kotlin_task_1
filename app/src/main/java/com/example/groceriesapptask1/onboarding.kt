@@ -1,0 +1,32 @@
+package com.example.groceriesapptask1
+
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+import android.widget.Button
+
+
+class onboarding : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_onboarding)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+            val getStartedButton = findViewById<Button>(R.id.getstartedbutton)
+
+            getStartedButton.setOnClickListener {
+                val intent = Intent(this, login::class.java)
+                startActivity(intent)
+
+        }
+    }
+}
