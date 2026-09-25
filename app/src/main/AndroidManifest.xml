@@ -38,13 +38,20 @@
             android:name=".Signup"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".homescreen"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".explore"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".bevrages"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".item_bevrage"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

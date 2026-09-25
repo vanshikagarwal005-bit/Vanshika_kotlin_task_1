@@ -28,6 +28,7 @@ class onboarding : AppCompatActivity() {
             getStartedButton.setOnClickListener {
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)
+                finish()
 
                 Toast.makeText(this,"sjdn", Toast.LENGTH_SHORT).show()
         }
