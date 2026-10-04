@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="My Cart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#181725"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bell_pepper"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bell Pepper Red"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bell Pepper Red"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1kg, Price"
+                        android:textSize="12sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/minusBellPepper"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="−"
+                            android:textSize="20sp"
+                            android:textColor="#B5B5B5"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                        <TextView
+                            android:id="@+id/bellPepperQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="14sp"
+                            android:textColor="#181725"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/plusBellPepper"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#53B175"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/removeBellPepper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="×"
+                        android:textSize="25sp"
+                        android:textColor="#B5B5B5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$4.99"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"
+                        android:layout_marginTop="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#E2E2E2"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/red_egg"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Egg Chicken Red"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egg Chicken Red"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4pcs, Price"
+                        android:textSize="12sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/minusEgg"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="−"
+                            android:textSize="20sp"
+                            android:textColor="#B5B5B5"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                        <TextView
+                            android:id="@+id/eggQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="14sp"
+                            android:textColor="#181725"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/plusEgg"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#53B175"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/removeEgg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="×"
+                        android:textSize="25sp"
+                        android:textColor="#B5B5B5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1.99"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"
+                        android:layout_marginTop="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- DIVIDER -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#E2E2E2"/>
+
+
+            <!-- ================= ITEM 3 ================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_41"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Organic Bananas"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Organic Bananas"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12kg, Price"
+                        android:textSize="12sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/minusBanana"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="−"
+                            android:textSize="20sp"
+                            android:textColor="#B5B5B5"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                        <TextView
+                            android:id="@+id/bananaQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="14sp"
+                            android:textColor="#181725"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/plusBanana"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#53B175"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/removeBanana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="×"
+                        android:textSize="25sp"
+                        android:textColor="#B5B5B5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3.00"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"
+                        android:layout_marginTop="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#E2E2E2"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ginger"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Ginger"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ginger"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="250gm, Price"
+                        android:textSize="12sp"
+                        android:textColor="#7C7C7C"
+                        android:layout_marginTop="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/minusGinger"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="−"
+                            android:textSize="20sp"
+                            android:textColor="#B5B5B5"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                        <TextView
+                            android:id="@+id/gingerQuantity"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="14sp"
+                            android:textColor="#181725"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/plusGinger"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:padding="0dp"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textColor="#53B175"
+                            app:backgroundTint="@android:color/white"
+                            app:strokeColor="#E2E2E2"
+                            app:strokeWidth="1dp"
+                            app:cornerRadius="16dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/removeGinger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="×"
+                        android:textSize="25sp"
+                        android:textColor="#B5B5B5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2.99"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#181725"
+                        android:layout_marginTop="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/checkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Go to Checkout"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#53B175"
+            app:cornerRadius="19dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="#489E67"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <TextView
+                android:id="@+id/checkoutPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="$12.96"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white">
+
+
+        <!-- SHOP -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/shop"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#181725"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+
+        <!-- EXPLORE -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/explore"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#181725"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+
+        <!-- CART (selected) -->
+
+        <LinearLayout
+            android:id="@+id/cartNavigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/cart"
+                android:contentDescription="Cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#53B175"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+
+        <!-- FAVOURITE -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/fav"
+                android:contentDescription="Favourite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourite"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#181725"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+
+        <!-- ACCOUNT -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/account"
+                android:contentDescription="Account"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#181725"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

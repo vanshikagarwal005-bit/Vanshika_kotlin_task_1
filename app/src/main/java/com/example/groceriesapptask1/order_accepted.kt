@@ -2,33 +2,34 @@ package com.example.groceriesapptask1
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class explore : AppCompatActivity() {
+class order_accepted : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_explore)
 
-        val beverages = findViewById<LinearLayout>(R.id.beverages)
 
-        beverages.setOnClickListener {
+        val order = findViewById<Button>(R.id.trackOrderButton)
 
-            val intent = Intent(this, bevrages::class.java)
+        order.setOnClickListener {
+
+            val intent = Intent(this, checkout::class.java)
             startActivity(intent)
 
         }
 
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+
+
+        setContentView(R.layout.activity_order_accepted)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
     }
 }

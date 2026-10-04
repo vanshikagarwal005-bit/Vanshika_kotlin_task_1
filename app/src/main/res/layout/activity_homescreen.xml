@@ -273,7 +273,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/img_10"
+                                    android:src="@drawable/apple"
                                     android:scaleType="fitCenter" />
                             </androidx.cardview.widget.CardView>
 
@@ -393,7 +393,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/img_11"
+                                    android:src="@drawable/bell_pepper"
                                     android:scaleType="fitCenter" />
                             </androidx.cardview.widget.CardView>
 
@@ -474,7 +474,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/img_12"
+                                    android:src="@drawable/ginger"
                                     android:scaleType="fitCenter" />
                             </androidx.cardview.widget.CardView>
 
@@ -584,7 +584,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/img_13"
+                            android:src="@drawable/pulses"
                             android:scaleType="fitStart" />
 
 
@@ -616,7 +616,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/img_16"
+                            android:src="@drawable/rice"
                             android:scaleType="fitStart" />
 
                         <TextView
@@ -664,7 +664,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/img_14"
+                                    android:src="@drawable/meat"
                                     android:scaleType="fitCenter" />
                             </androidx.cardview.widget.CardView>
 
@@ -745,7 +745,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/img_15"
+                                    android:src="@drawable/chicken"
                                     android:scaleType="fitCenter" />
                             </androidx.cardview.widget.CardView>
 
@@ -827,7 +827,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/img_25" />
+                android:src="@drawable/shop" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -847,7 +847,7 @@
             <ImageView
                 android:layout_width="28.35dp"
                 android:layout_height="18.21dp"
-                 android:src="@drawable/img_26"
+                 android:src="@drawable/explore"
                  />
             <TextView
                 android:layout_width="wrap_content"
@@ -868,7 +868,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="22dp"
-                android:src="@drawable/img_27"
+                android:src="@drawable/cart"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -889,7 +889,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/img_28"
+                android:src="@drawable/fav"
                  />
 
             <TextView
@@ -911,7 +911,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/img_29"
+                android:src="@drawable/account"
                  />
             <TextView
                 android:layout_width="wrap_content"
